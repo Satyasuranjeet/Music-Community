@@ -1,0 +1,57 @@
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(55, 65, 81, 0.1);
+    border-radius: 10px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(139, 92, 246, 0.5);
+    border-radius: 10px;
+  }
+  
+  /* Music player animation bars */
+  @keyframes music-bar {
+    0% { height: 3px; }
+    50% { height: 12px; }
+    100% { height: 3px; }
+  }
+  
+  .animate-music-bar-1 {
+    animation: music-bar 0.8s ease-in-out infinite;
+  }
+  
+  .animate-music-bar-2 {
+    animation: music-bar 0.8s ease-in-out infinite 0.2s;
+  }
+  
+  .animate-music-bar-3 {
+    animation: music-bar 0.8s ease-in-out infinite 0.4s;
+  }
+  
+  /* Range input styling */
+  input[type="range"] {
+    -webkit-appearance: none;
+    height: 4px;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #8b5cf6;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb:hover {
+    background: #9f7aea;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+  }

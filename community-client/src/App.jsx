@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Heart, MessageSquare, Play, Pause, SkipForward, SkipBack, Volume2, Clock, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const API_BASE_URL = 'http://localhost:5000'; // Change this to your Flask server URL
+const API_BASE_URL = 'https://music-community-orcin.vercel.app';
 
 export default function MusicApp() {
   const [playlists, setPlaylists] = useState([]);
